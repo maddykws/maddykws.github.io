@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Venkat Madhav Venigalla — AI Engineer & Inventor</title>
-  <meta name="description" content="Senior AI Engineer. U.S. Patent holder in self-healing multi-agent workflows. Building production LLM systems at Bank of America." />
+  <meta name="description" content="Senior AI Engineer. U.S. Provisional Patent applicant for self-healing multi-agent workflows. Building production LLM systems at Bank of America." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -97,7 +97,157 @@
         <div class="role-pills">
           <a href="#projects" class="pill active">AI / LLM Engineer</a>
           <a href="#projects" class="pill">Agentic Systems</a>
-          <a href="#research" class="pill">U.S. Patent Holder</a>
+          <a href="#research" class="pill">U.S. Provisional Patent Applicant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & IP -->
+  <section id="research">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-icon">🔬</div>
+        <h2>Research &amp; IP</h2>
+      </div>
+      <p class="section-sub">
+        Original work pushing the boundary of what <strong>production AI systems</strong> can do autonomously.
+      </p>
+
+      <!-- Patent Certificate -->
+      <div class="patent-cert">
+        <div class="patent-cert-inner">
+          <div class="patent-watermark">USPTO</div>
+          <div class="patent-cert-top">
+            <div class="patent-seal-ring">
+              <div class="patent-seal-inner">⚡</div>
+            </div>
+            <div class="patent-cert-meta">
+              <div class="patent-type-label">U.S. Provisional Patent</div>
+              <div class="patent-app-num">App. No. 63/721,849 · Filed &amp; Pending</div>
+            </div>
+          </div>
+          <h3 class="patent-title">Self-Healing Multi-Agent Workflows<br />in Distributed AI Systems</h3>
+          <p class="patent-desc">A novel architecture for autonomous error recovery. When an agent fails, the system detects, diagnoses, and routes around the failure — without human intervention. Built for financial-scale reliability at Bank of America.</p>
+          <div class="patent-tags-row">
+            <span class="patent-tag">Distributed AI</span>
+            <span class="patent-tag">Autonomous Recovery</span>
+            <span class="patent-tag">Multi-Agent</span>
+            <span class="patent-tag">Bank of America</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PATENT DEMO LAUNCH -->
+      <div class="demo-launch-card">
+        <!-- Mini animated 3D node preview -->
+        <div class="demo-mini-scene" aria-hidden="true">
+          <svg class="demo-scene-svg" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
+            <!-- Edges -->
+            <line class="demo-edge" x1="160" y1="60" x2="60" y2="30"/>
+            <line class="demo-edge" x1="160" y1="60" x2="260" y2="30"/>
+            <line class="demo-edge" x1="160" y1="60" x2="60" y2="90"/>
+            <line class="demo-edge" x1="160" y1="60" x2="260" y2="90"/>
+            <line class="demo-edge" x1="160" y1="60" x2="160" y2="10"/>
+            <!-- Traveling particles -->
+            <circle class="demo-particle p1" r="3" fill="#818cf8"/>
+            <circle class="demo-particle p2" r="3" fill="#34d399"/>
+            <circle class="demo-particle p3" r="3" fill="#fbbf24"/>
+            <circle class="demo-particle p4" r="3" fill="#f472b6"/>
+            <circle class="demo-particle p5" r="3" fill="#22d3ee"/>
+            <!-- Orchestrator -->
+            <circle class="demo-node orchestrator-node" cx="160" cy="60" r="16"/>
+            <text class="demo-node-icon" x="160" y="65">⚡</text>
+            <!-- Agent nodes -->
+            <circle class="demo-node agent-node" cx="60" cy="30" r="10" style="--c:#818cf8"/>
+            <circle class="demo-node agent-node fault-node" cx="260" cy="30" r="10" style="--c:#ef4444"/>
+            <circle class="demo-node agent-node" cx="60" cy="90" r="10" style="--c:#fbbf24"/>
+            <circle class="demo-node agent-node" cx="260" cy="90" r="10" style="--c:#f472b6"/>
+            <circle class="demo-node agent-node" cx="160" cy="10" r="10" style="--c:#22d3ee"/>
+            <!-- Fault flash on red node -->
+            <circle class="demo-fault-ring" cx="260" cy="30" r="10"/>
+            <!-- Recovery node spawning -->
+            <circle class="demo-node recovery-node" cx="300" cy="55" r="8"/>
+          </svg>
+          <div class="demo-scene-labels">
+            <span class="dsl-live">● LIVE AI</span>
+            <span class="dsl-fault">⚡ Fault Detected</span>
+            <span class="dsl-heal">↻ Self-Healed</span>
+          </div>
+        </div>
+
+        <!-- Explanation -->
+        <div class="demo-launch-body">
+          <div class="demo-launch-eyebrow">Interactive Patent Demo</div>
+          <h3 class="demo-launch-title">Watch AI Systems Heal Themselves in Real Time</h3>
+          <p class="demo-launch-desc">
+            Trigger a fault. Watch the orchestrator detect it, spawn a recovery agent, and continue the pipeline —
+            all without human input. Powered by real Claude API calls, streamed live as it happens.
+          </p>
+          <div class="demo-launch-pills">
+            <span>Real Claude API</span>
+            <span>Three.js 3D</span>
+            <span>Live SSE Stream</span>
+            <span>3 free demos / day</span>
+          </div>
+          <button class="demo-launch-btn" id="openPatentDemo">
+            <span class="dlb-glow"></span>
+            <span class="dlb-icon">▶</span>
+            <span class="dlb-text">Experience the Patent Live</span>
+            <span class="dlb-arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Full-screen demo overlay -->
+      <div class="demo-overlay" id="demoOverlay" role="dialog" aria-modal="true" aria-label="Self-Healing Demo">
+        <div class="demo-overlay-header">
+          <div class="demo-overlay-title">
+            <span class="demo-overlay-badge">PATENT DEMO</span>
+            Self-Healing Multi-Agent Workflow
+          </div>
+          <div class="demo-overlay-controls">
+            <button class="demo-overlay-close" id="closePatentDemo" aria-label="Close demo">✕</button>
+          </div>
+        </div>
+        <iframe
+          id="demoIframe"
+          class="demo-overlay-iframe"
+          src=""
+          data-src="https://self-healing-demo.onrender.com"
+          title="Self-Healing Multi-Agent Workflow Demo"
+          allow="same-origin"
+          loading="lazy"
+        ></iframe>
+        <div class="demo-overlay-loading" id="demoLoading">
+          <div class="dol-spinner"></div>
+          <p>Waking up the demo server<br/><small>Free tier — first load takes ~30s</small></p>
+        </div>
+      </div>
+
+      <!-- Papers -->
+      <div class="papers-grid">
+        <div class="paper-card">
+          <div class="paper-status-badge">⏳ Under Review</div>
+          <div class="paper-metric">+35%</div>
+          <div class="paper-metric-label">multi-session factual consistency</div>
+          <h4>Persistent Memory Architecture for Long-Horizon LLM Agents</h4>
+          <p>Structured memory layer enabling LLM agents to maintain coherence across extended interactions — beyond context window limits.</p>
+          <div class="paper-tags">
+            <span>Memory Compression</span>
+            <span>Long-Horizon Reasoning</span>
+          </div>
+        </div>
+        <div class="paper-card">
+          <div class="paper-status-badge">⏳ Under Review</div>
+          <div class="paper-metric">−40%</div>
+          <div class="paper-metric-label">context drift in conversational AI</div>
+          <h4>Self-Healing Memory Agents: Autonomous Error Recovery in LLM Conversational Systems</h4>
+          <p>Self-healing mechanism that detects and autonomously corrects memory corruption and context drift before responses degrade.</p>
+          <div class="paper-tags">
+            <span>Autonomous Recovery</span>
+            <span>Conversational AI</span>
+          </div>
         </div>
       </div>
     </div>
@@ -329,7 +479,7 @@
         <div class="card">
           <div class="card-icon amber">⚗️</div>
           <h3>AI Research</h3>
-          <p>2 papers under review on persistent memory and self-healing agents. USPTO patent on autonomous error recovery.</p>
+          <p>2 papers under review on persistent memory and self-healing agents. U.S. provisional patent application filed for autonomous error recovery.</p>
         </div>
         <div class="card">
           <div class="card-icon green">🏗️</div>
@@ -340,157 +490,6 @@
           <div class="card-icon rose">🏥</div>
           <h3>Enterprise Domains</h3>
           <p>Financial systems at Bank of America. HIPAA-compliant healthcare tech at Premier Inc.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESEARCH & IP -->
-  <section id="research">
-    <div class="container">
-      <div class="section-heading">
-        <div class="section-icon">🔬</div>
-        <h2>Research &amp; IP</h2>
-      </div>
-      <p class="section-sub">
-        Original work pushing the boundary of what <strong>production AI systems</strong> can do autonomously.
-      </p>
-
-      <!-- Patent Certificate -->
-      <div class="patent-cert">
-        <div class="patent-cert-inner">
-          <div class="patent-watermark">USPTO</div>
-          <div class="patent-cert-top">
-            <div class="patent-seal-ring">
-              <div class="patent-seal-inner">⚡</div>
-            </div>
-            <div class="patent-cert-meta">
-              <div class="patent-type-label">U.S. Provisional Patent</div>
-              <div class="patent-app-num">App. No. 63/721,849 · Filed &amp; Pending</div>
-            </div>
-          </div>
-          <h3 class="patent-title">Self-Healing Multi-Agent Workflows<br />in Distributed AI Systems</h3>
-          <p class="patent-desc">A novel architecture for autonomous error recovery. When an agent fails, the system detects, diagnoses, and routes around the failure — without human intervention. Built for financial-scale reliability at Bank of America.</p>
-          <div class="patent-tags-row">
-            <span class="patent-tag">Distributed AI</span>
-            <span class="patent-tag">Autonomous Recovery</span>
-            <span class="patent-tag">Multi-Agent</span>
-            <span class="patent-tag">Bank of America</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- PATENT DEMO LAUNCH -->
-      <div class="demo-launch-card">
-        <!-- Mini animated 3D node preview -->
-        <div class="demo-mini-scene" aria-hidden="true">
-          <svg class="demo-scene-svg" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
-            <!-- Edges -->
-            <line class="demo-edge" x1="160" y1="60" x2="60" y2="30"/>
-            <line class="demo-edge" x1="160" y1="60" x2="260" y2="30"/>
-            <line class="demo-edge" x1="160" y1="60" x2="60" y2="90"/>
-            <line class="demo-edge" x1="160" y1="60" x2="260" y2="90"/>
-            <line class="demo-edge" x1="160" y1="60" x2="160" y2="10"/>
-            <!-- Traveling particles -->
-            <circle class="demo-particle p1" r="3" fill="#818cf8"/>
-            <circle class="demo-particle p2" r="3" fill="#34d399"/>
-            <circle class="demo-particle p3" r="3" fill="#fbbf24"/>
-            <circle class="demo-particle p4" r="3" fill="#f472b6"/>
-            <circle class="demo-particle p5" r="3" fill="#22d3ee"/>
-            <!-- Orchestrator -->
-            <circle class="demo-node orchestrator-node" cx="160" cy="60" r="16"/>
-            <text class="demo-node-icon" x="160" y="65">⚡</text>
-            <!-- Agent nodes -->
-            <circle class="demo-node agent-node" cx="60" cy="30" r="10" style="--c:#818cf8"/>
-            <circle class="demo-node agent-node fault-node" cx="260" cy="30" r="10" style="--c:#ef4444"/>
-            <circle class="demo-node agent-node" cx="60" cy="90" r="10" style="--c:#fbbf24"/>
-            <circle class="demo-node agent-node" cx="260" cy="90" r="10" style="--c:#f472b6"/>
-            <circle class="demo-node agent-node" cx="160" cy="10" r="10" style="--c:#22d3ee"/>
-            <!-- Fault flash on red node -->
-            <circle class="demo-fault-ring" cx="260" cy="30" r="10"/>
-            <!-- Recovery node spawning -->
-            <circle class="demo-node recovery-node" cx="300" cy="55" r="8"/>
-          </svg>
-          <div class="demo-scene-labels">
-            <span class="dsl-live">● LIVE AI</span>
-            <span class="dsl-fault">⚡ Fault Detected</span>
-            <span class="dsl-heal">↻ Self-Healed</span>
-          </div>
-        </div>
-
-        <!-- Explanation -->
-        <div class="demo-launch-body">
-          <div class="demo-launch-eyebrow">Interactive Patent Demo</div>
-          <h3 class="demo-launch-title">Watch AI Systems Heal Themselves in Real Time</h3>
-          <p class="demo-launch-desc">
-            Trigger a fault. Watch the orchestrator detect it, spawn a recovery agent, and continue the pipeline —
-            all without human input. Powered by real Claude API calls, streamed live as it happens.
-          </p>
-          <div class="demo-launch-pills">
-            <span>Real Claude API</span>
-            <span>Three.js 3D</span>
-            <span>Live SSE Stream</span>
-            <span>3 free demos / day</span>
-          </div>
-          <button class="demo-launch-btn" id="openPatentDemo">
-            <span class="dlb-glow"></span>
-            <span class="dlb-icon">▶</span>
-            <span class="dlb-text">Experience the Patent Live</span>
-            <span class="dlb-arrow">→</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Full-screen demo overlay -->
-      <div class="demo-overlay" id="demoOverlay" role="dialog" aria-modal="true" aria-label="Self-Healing Demo">
-        <div class="demo-overlay-header">
-          <div class="demo-overlay-title">
-            <span class="demo-overlay-badge">PATENT DEMO</span>
-            Self-Healing Multi-Agent Workflow
-          </div>
-          <div class="demo-overlay-controls">
-            <a class="demo-overlay-link" href="https://github.com/maddykws/self-healing-demo" target="_blank" rel="noopener">GitHub ↗</a>
-            <button class="demo-overlay-close" id="closePatentDemo" aria-label="Close demo">✕</button>
-          </div>
-        </div>
-        <iframe
-          id="demoIframe"
-          class="demo-overlay-iframe"
-          src=""
-          data-src="https://self-healing-demo.onrender.com"
-          title="Self-Healing Multi-Agent Workflow Demo"
-          allow="same-origin"
-          loading="lazy"
-        ></iframe>
-        <div class="demo-overlay-loading" id="demoLoading">
-          <div class="dol-spinner"></div>
-          <p>Waking up the demo server<br/><small>Free tier — first load takes ~30s</small></p>
-        </div>
-      </div>
-
-      <!-- Papers -->
-      <div class="papers-grid">
-        <div class="paper-card">
-          <div class="paper-status-badge">⏳ Under Review</div>
-          <div class="paper-metric">+35%</div>
-          <div class="paper-metric-label">multi-session factual consistency</div>
-          <h4>Persistent Memory Architecture for Long-Horizon LLM Agents</h4>
-          <p>Structured memory layer enabling LLM agents to maintain coherence across extended interactions — beyond context window limits.</p>
-          <div class="paper-tags">
-            <span>Memory Compression</span>
-            <span>Long-Horizon Reasoning</span>
-          </div>
-        </div>
-        <div class="paper-card">
-          <div class="paper-status-badge">⏳ Under Review</div>
-          <div class="paper-metric">−40%</div>
-          <div class="paper-metric-label">context drift in conversational AI</div>
-          <h4>Self-Healing Memory Agents: Autonomous Error Recovery in LLM Conversational Systems</h4>
-          <p>Self-healing mechanism that detects and autonomously corrects memory corruption and context drift before responses degrade.</p>
-          <div class="paper-tags">
-            <span>Autonomous Recovery</span>
-            <span>Conversational AI</span>
-          </div>
         </div>
       </div>
     </div>
@@ -513,7 +512,7 @@
             <div class="tl-company">Bank of America <span class="tl-loc">· New York, NY</span></div>
             <div class="tl-role">Senior Software Engineer — Generative AI &amp; Agentic Systems</div>
             <div class="tl-tags">
-              <span>GPT-4</span><span>Claude</span><span>LangChain</span><span>Multi-Agent</span><span>USPTO Patent</span>
+              <span>GPT-4</span><span>Claude</span><span>LangChain</span><span>Multi-Agent</span><span>USPTO Provisional Patent</span>
             </div>
           </div>
         </div>
@@ -582,7 +581,7 @@
         <div class="stat-sep"></div>
         <div class="stat-item">
           <div class="stat-num">1</div>
-          <div class="stat-label">U.S. Patent</div>
+          <div class="stat-label">Provisional Patent</div>
         </div>
         <div class="stat-sep"></div>
         <div class="stat-item">
