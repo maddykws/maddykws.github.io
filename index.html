@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkat Madhav Venigalla — AI Engineer & Inventor</title>
+  <meta name="description" content="Senior AI Engineer. U.S. Patent holder in self-healing multi-agent workflows. Building production LLM systems at Bank of America." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-logo">VMV</div>
+    <div class="nav-links">
+      <a href="#mypath"   class="nav-link">My path</a>
+      <a href="#projects" class="nav-link">What I build</a>
+      <a href="#contact"  class="nav-link">Let's talk</a>
+    </div>
+    <button class="nav-ask" id="navAskBtn">Ask me ✦</button>
+    <button class="theme-toggle-nav" id="themeToggle" title="Toggle dark mode">🌙</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="avatar-circle">
+        <svg class="anime-avatar-svg" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="avBg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0d9488"/><stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+            <linearGradient id="avSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#f3c08a"/><stop offset="100%" stop-color="#e8a970"/>
+            </linearGradient>
+            <clipPath id="avCircle"><circle cx="90" cy="90" r="90"/></clipPath>
+          </defs>
+          <g clip-path="url(#avCircle)">
+            <circle cx="90" cy="90" r="90" fill="url(#avBg)"/>
+            <!-- Body -->
+            <path d="M 10 180 L 10 152 Q 35 132 65 128 L 90 148 L 115 128 Q 145 132 170 152 L 170 180 Z" fill="#1e293b"/>
+            <path d="M 78 128 L 90 146 L 102 128 L 97 124 L 90 136 L 83 124 Z" fill="#334155"/>
+            <!-- Neck -->
+            <rect x="78" y="118" width="24" height="18" rx="5" fill="url(#avSkin)"/>
+            <!-- Face -->
+            <ellipse cx="90" cy="96" rx="40" ry="44" fill="url(#avSkin)"/>
+            <!-- Hair base -->
+            <path d="M 50 88 Q 53 50 90 46 Q 127 50 130 88 Q 126 62 115 55 Q 103 48 90 47 Q 77 48 65 55 Q 54 62 50 88 Z" fill="#1a1a2e"/>
+            <path d="M 50 88 Q 44 73 50 59 Q 49 77 54 91 Z" fill="#1a1a2e"/>
+            <path d="M 130 88 Q 136 73 130 59 Q 131 77 126 91 Z" fill="#1a1a2e"/>
+            <path d="M 76 50 Q 83 43 90 47" stroke="#12122a" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M 90 47 Q 97 43 104 50" stroke="#12122a" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Ears -->
+            <ellipse cx="50" cy="97" rx="6" ry="7" fill="#e8a970"/>
+            <ellipse cx="130" cy="97" rx="6" ry="7" fill="#e8a970"/>
+            <!-- Eyebrows -->
+            <path d="M 66 81 Q 74 77 81 80" stroke="#2a1a0e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M 99 80 Q 106 77 114 81" stroke="#2a1a0e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Left eye -->
+            <ellipse cx="74" cy="92" rx="9" ry="10" fill="#fff"/>
+            <ellipse cx="74" cy="93" rx="6" ry="7" fill="#3d2b1a"/>
+            <ellipse cx="74" cy="93" rx="3.5" ry="4" fill="#0a0a12"/>
+            <circle cx="76.5" cy="90.5" r="1.8" fill="#fff"/>
+            <circle cx="72" cy="95" r="0.9" fill="rgba(255,255,255,0.4)"/>
+            <!-- Right eye -->
+            <ellipse cx="106" cy="92" rx="9" ry="10" fill="#fff"/>
+            <ellipse cx="106" cy="93" rx="6" ry="7" fill="#3d2b1a"/>
+            <ellipse cx="106" cy="93" rx="3.5" ry="4" fill="#0a0a12"/>
+            <circle cx="108.5" cy="90.5" r="1.8" fill="#fff"/>
+            <circle cx="104" cy="95" r="0.9" fill="rgba(255,255,255,0.4)"/>
+            <!-- Nose -->
+            <path d="M 87 104 Q 90 110 93 104" stroke="#d4925a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- Smile -->
+            <path d="M 79 117 Q 90 123 101 117" stroke="#c8785a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- Cheek blush -->
+            <ellipse cx="66" cy="105" rx="8" ry="4" fill="rgba(255,150,100,0.15)"/>
+            <ellipse cx="114" cy="105" rx="8" ry="4" fill="rgba(255,150,100,0.15)"/>
+          </g>
+        </svg>
+        <div class="verified-badge">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#1d9bf0"/>
+            <path d="M 6.5 12 L 10 15.5 L 17.5 8.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm <span class="gradient-text">@madhav</span>,</p>
+        <h1 class="hero-headline">
+          <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+        </h1>
+        <p class="hero-sub">that ships production AI systems<br class="br-hide" />
+          that <span class="heal-wrap"><strong class="heal-text">heal on their own.</strong></span></p>
+        <div class="role-pills">
+          <a href="#projects" class="pill active">AI / LLM Engineer</a>
+          <a href="#projects" class="pill">Agentic Systems</a>
+          <a href="#research" class="pill">U.S. Patent Holder</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILD -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-icon">⚡</div>
+        <h2>What I Build</h2>
+      </div>
+      <p class="section-sub">
+        End-to-end ownership from <strong>design → build → deploy → observe</strong>,<br />
+        working at the intersection of LLM research and production engineering.
+      </p>
+
+      <!-- Featured: AI Powered Pipeline -->
+      <div class="project-featured card">
+        <div class="project-header">
+          <div class="project-badge-row">
+            <div class="project-badge live">⚡ Live Featured Project</div>
+            <a href="https://github.com/maddykws/jubilant-waddle" target="_blank" rel="noopener" class="project-github-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub ↗
+            </a>
+          </div>
+          <h3>AI Powered Pipeline</h3>
+          <p>Automated pipeline that evaluates job offers using LLMs — scoring fit, extracting requirements, generating tailored CVs, and tracking applications end-to-end. Built with Claude Code, running 45+ portal scans and producing ATS-optimised PDFs per evaluation.</p>
+          <div class="project-tags">
+            <span>Claude Code</span><span>GPT-4</span><span>Playwright</span><span>Node.js</span><span>Go</span><span>YAML</span>
+          </div>
+          <div class="project-stats">
+            <div class="pstat"><div class="pstat-num">100+</div><div class="pstat-label">CVs generated</div></div>
+            <div class="pstat"><div class="pstat-num">45+</div><div class="pstat-label">portals scanned</div></div>
+            <div class="pstat"><div class="pstat-num">6</div><div class="pstat-label">eval dimensions</div></div>
+          </div>
+        </div>
+
+        <!-- Tab switcher -->
+        <div class="project-tabs">
+          <button class="ptab active" data-tab="how">How It Works</button>
+          <button class="ptab" data-tab="demo">
+            <span class="live-dot"></span>Live Demo
+          </button>
+        </div>
+
+        <!-- HOW IT WORKS TAB -->
+        <div class="ptab-panel" id="ptab-how">
+          <!-- Pipeline flow -->
+          <div class="pipeline-flow">
+            <div class="pf-step active" data-step="0"><div class="pf-icon">📥</div><div class="pf-label">Input</div></div>
+            <div class="pf-arrow">→</div>
+            <div class="pf-step" data-step="1"><div class="pf-icon">🏷️</div><div class="pf-label">Archetype</div></div>
+            <div class="pf-arrow">→</div>
+            <div class="pf-step" data-step="2"><div class="pf-icon">📊</div><div class="pf-label">Evaluate</div></div>
+            <div class="pf-arrow">→</div>
+            <div class="pf-step" data-step="3"><div class="pf-icon">📄</div><div class="pf-label">Generate</div></div>
+            <div class="pf-arrow">→</div>
+            <div class="pf-step" data-step="4"><div class="pf-icon">📋</div><div class="pf-label">Track</div></div>
+          </div>
+          <div class="pf-detail-box" id="pfDetail">
+            <div class="pfd-title">📥 Paste JD or URL</div>
+            <div class="pfd-body">Drop any job listing — URL or raw text. Playwright auto-navigates to verify it's still active. Supports Greenhouse, Ashby, Lever, and direct company pages.</div>
+          </div>
+          <!-- Feature grid -->
+          <div class="feat-grid">
+            <div class="feat-item"><span class="feat-icon">⚡</span><div><div class="feat-name">Auto-Pipeline</div><div class="feat-desc">URL → eval + PDF + tracker in one shot</div></div></div>
+            <div class="feat-item"><span class="feat-icon">🧠</span><div><div class="feat-name">6-Block Evaluation</div><div class="feat-desc">CV match · gaps · comp · STAR stories · hooks</div></div></div>
+            <div class="feat-item"><span class="feat-icon">📄</span><div><div class="feat-name">ATS PDF Generation</div><div class="feat-desc">Keyword-injected CV, custom per job description</div></div></div>
+            <div class="feat-item"><span class="feat-icon">🔍</span><div><div class="feat-name">Portal Scanner</div><div class="feat-desc">45+ companies · Ashby, Greenhouse, Lever, Wellfound</div></div></div>
+            <div class="feat-item"><span class="feat-icon">⚙️</span><div><div class="feat-name">Batch Processing</div><div class="feat-desc">10+ offers in parallel with Claude sub-agents</div></div></div>
+            <div class="feat-item"><span class="feat-icon">🎯</span><div><div class="feat-name">Interview Story Bank</div><div class="feat-desc">STAR+R stories that accumulate across evals</div></div></div>
+          </div>
+        </div>
+
+        <!-- LIVE DEMO TAB -->
+        <div class="ptab-panel" id="ptab-demo" style="display:none">
+          <div class="live-notice">
+            <span class="live-badge-dot"></span>
+            <span><strong>Live Backend</strong> — Paste your resume + a job description. The engine evaluates <em>your</em> fit. <strong>1 free evaluation per resume.</strong></span>
+          </div>
+          <div class="eval-form">
+            <div class="eval-resume-section">
+              <label class="eval-label">📄 Your Resume <span class="eval-label-req">required</span></label>
+              <textarea id="evalResume" class="eval-textarea eval-resume-ta" placeholder="Paste your resume here — skills, experience, education..." rows="4"></textarea>
+              <div class="eval-resume-hint" id="evalResumeHint">Paste your resume to unlock the evaluation</div>
+            </div>
+            <div class="eval-inputs">
+              <input id="evalRole" class="eval-input" placeholder="Job title  (e.g. Senior AI Engineer)" />
+              <input id="evalCompany" class="eval-input" placeholder="Company  (e.g. OpenAI)" />
+            </div>
+            <textarea id="evalJD" class="eval-textarea" placeholder="Paste a job description excerpt here..." rows="3"></textarea>
+            <div class="eval-form-footer">
+              <div class="token-counter" id="tokenCounter">
+                <span class="tc-dot"></span>
+                <span id="tcText">1 free evaluation per resume</span>
+              </div>
+              <button class="eval-btn" id="evalBtn" disabled>
+                <span id="evalBtnText">Paste Resume First</span>
+              </button>
+            </div>
+          </div>
+          <div class="eval-result-panel" id="evalResultPanel" style="display:none"></div>
+        </div>
+      </div>
+
+      <!-- Voice AI Agent Project -->
+      <div class="project-featured card" id="voice-agent-card" style="margin-top:24px">
+        <div class="project-header">
+          <div class="project-badge-row">
+            <div class="project-badge live" id="voice-agent-badge">⚡ Live Featured Project</div>
+            <div class="voice-agent-status-pill" id="voiceStatusPill">
+              <span class="voice-status-dot" id="voiceStatusDot"></span>
+              <span id="voiceStatusLabel">checking...</span>
+            </div>
+          </div>
+          <h3>Voice AI Agent — Customer Service & Scheduling</h3>
+          <p>End-to-end voice agent built on <strong>Vapi AI</strong> + <strong>GPT-4o mini</strong>. Two deployable agents: a customer support agent (orders, returns, billing) and an appointment booking agent (medical clinic scheduling). Demonstrates real-time WebRTC voice, tool use, transcript streaming, and agentic dialogue management.</p>
+          <div class="project-tags">
+            <span>Vapi AI</span><span>GPT-4o mini</span><span>WebRTC</span><span>Node.js</span><span>11Labs TTS</span><span>WebSDK</span>
+          </div>
+        </div>
+
+        <!-- Tab switcher -->
+        <div class="project-tabs">
+          <button class="ptab active" data-voice-tab="agents">Agents</button>
+          <button class="ptab" data-voice-tab="demo">
+            <span class="live-dot"></span>Try It Live
+          </button>
+          <button class="ptab" data-voice-tab="arch">Architecture</button>
+        </div>
+
+        <!-- AGENTS TAB -->
+        <div class="voice-tab-panel" id="vtab-agents">
+          <div class="voice-agents-grid">
+            <div class="voice-agent-item">
+              <div class="vai-icon">🎧</div>
+              <div>
+                <div class="vai-name">Aria — Customer Support</div>
+                <div class="vai-desc">Handles order lookups, returns (30-day policy), billing disputes, and escalation routing for TechShop retail.</div>
+                <div class="vai-tags"><span>Order management</span><span>Returns</span><span>Escalation</span></div>
+              </div>
+            </div>
+            <div class="voice-agent-item">
+              <div class="vai-icon">📅</div>
+              <div>
+                <div class="vai-name">Max — Appointment Scheduler</div>
+                <div class="vai-desc">Books, reschedules, and cancels appointments at Hillside Medical Clinic across 5 doctors and 4 appointment types.</div>
+                <div class="vai-tags"><span>Booking</span><span>Rescheduling</span><span>Clinic workflow</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="feat-grid" style="margin-top:16px">
+            <div class="feat-item"><span class="feat-icon">🎙️</span><div><div class="feat-name">Real-time Voice</div><div class="feat-desc">WebRTC via Vapi — sub-200ms latency</div></div></div>
+            <div class="feat-item"><span class="feat-icon">📝</span><div><div class="feat-name">Live Transcript</div><div class="feat-desc">Streaming ASR with speaker separation</div></div></div>
+            <div class="feat-item"><span class="feat-icon">🔧</span><div><div class="feat-name">Tool Use</div><div class="feat-desc">Order lookups, slot availability, booking confirmation</div></div></div>
+            <div class="feat-item"><span class="feat-icon">🔀</span><div><div class="feat-name">Multi-agent Switch</div><div class="feat-desc">Swap agents live without page reload</div></div></div>
+          </div>
+        </div>
+
+        <!-- LIVE DEMO TAB -->
+        <div class="voice-tab-panel" id="vtab-demo" style="display:none">
+          <div id="voice-demo-container">
+            <!-- Populated by JS: either inline frame or connect button -->
+          </div>
+        </div>
+
+        <!-- ARCHITECTURE TAB -->
+        <div class="voice-tab-panel" id="vtab-arch" style="display:none">
+          <div class="arch-flow">
+            <div class="arch-row">
+              <div class="arch-box client">
+                <div class="arch-icon">🌐</div>
+                <div class="arch-label">Portfolio Frontend</div>
+                <div class="arch-sub">Vapi Web SDK (WebRTC)</div>
+              </div>
+              <div class="arch-arrow">↔</div>
+              <div class="arch-box backend">
+                <div class="arch-icon">⚙️</div>
+                <div class="arch-label">Express Backend</div>
+                <div class="arch-sub">port 3335 · assistant config · health API</div>
+              </div>
+              <div class="arch-arrow">↔</div>
+              <div class="arch-box cloud">
+                <div class="arch-icon">🎙️</div>
+                <div class="arch-label">Vapi Cloud</div>
+                <div class="arch-sub">WebRTC relay · ASR · TTS · LLM routing</div>
+              </div>
+            </div>
+            <div class="arch-row" style="margin-top:12px">
+              <div class="arch-box model" style="margin:0 auto">
+                <div class="arch-icon">🧠</div>
+                <div class="arch-label">GPT-4o mini</div>
+                <div class="arch-sub">Dialogue · Tool calls · Intent</div>
+              </div>
+              <div class="arch-arrow">+</div>
+              <div class="arch-box tts" style="margin:0 auto">
+                <div class="arch-icon">🔊</div>
+                <div class="arch-label">ElevenLabs TTS</div>
+                <div class="arch-sub">Natural voice synthesis</div>
+              </div>
+            </div>
+          </div>
+          <div class="arch-note">
+            Backend serves assistant system prompts and config via <code>/api/assistant/:id</code>.
+            Frontend polls <code>/api/health</code> to show live status. No credentials exposed to client.
+          </div>
+        </div>
+      </div>
+
+      <!-- Capability Cards -->
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon teal">🤖</div>
+          <h3>Agentic Systems</h3>
+          <p>Multi-agent orchestration, tool calling, memory layers, self-healing pipelines, and autonomous error recovery</p>
+        </div>
+        <div class="card">
+          <div class="card-icon purple">🧠</div>
+          <h3>LLM Infrastructure</h3>
+          <p>GPT-4, Claude, Mistral API integration, prompt engineering, context injection, RAG pipelines at enterprise scale</p>
+        </div>
+        <div class="card">
+          <div class="card-icon blue">📡</div>
+          <h3>LLMOps & Observability</h3>
+          <p>Langfuse evals, CI/CD for AI, evaluation frameworks, cost/latency trade-offs, production reliability</p>
+        </div>
+        <div class="card">
+          <div class="card-icon amber">⚗️</div>
+          <h3>AI Research</h3>
+          <p>2 papers under review on persistent memory and self-healing agents. USPTO patent on autonomous error recovery.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">🏗️</div>
+          <h3>Backend Systems</h3>
+          <p>Python, Java, Spring Boot, Node.js microservices. REST APIs, distributed systems, AWS deployments</p>
+        </div>
+        <div class="card">
+          <div class="card-icon rose">🏥</div>
+          <h3>Enterprise Domains</h3>
+          <p>Financial systems at Bank of America. HIPAA-compliant healthcare tech at Premier Inc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & IP -->
+  <section id="research">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-icon">🔬</div>
+        <h2>Research &amp; IP</h2>
+      </div>
+      <p class="section-sub">
+        Original work pushing the boundary of what <strong>production AI systems</strong> can do autonomously.
+      </p>
+
+      <!-- Patent Certificate -->
+      <div class="patent-cert">
+        <div class="patent-cert-inner">
+          <div class="patent-watermark">USPTO</div>
+          <div class="patent-cert-top">
+            <div class="patent-seal-ring">
+              <div class="patent-seal-inner">⚡</div>
+            </div>
+            <div class="patent-cert-meta">
+              <div class="patent-type-label">U.S. Provisional Patent</div>
+              <div class="patent-app-num">App. No. 63/721,849 · Filed &amp; Pending</div>
+            </div>
+          </div>
+          <h3 class="patent-title">Self-Healing Multi-Agent Workflows<br />in Distributed AI Systems</h3>
+          <p class="patent-desc">A novel architecture for autonomous error recovery. When an agent fails, the system detects, diagnoses, and routes around the failure — without human intervention. Built for financial-scale reliability at Bank of America.</p>
+          <div class="patent-tags-row">
+            <span class="patent-tag">Distributed AI</span>
+            <span class="patent-tag">Autonomous Recovery</span>
+            <span class="patent-tag">Multi-Agent</span>
+            <span class="patent-tag">Bank of America</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Papers -->
+      <div class="papers-grid">
+        <div class="paper-card">
+          <div class="paper-status-badge">⏳ Under Review</div>
+          <div class="paper-metric">+35%</div>
+          <div class="paper-metric-label">multi-session factual consistency</div>
+          <h4>Persistent Memory Architecture for Long-Horizon LLM Agents</h4>
+          <p>Structured memory layer enabling LLM agents to maintain coherence across extended interactions — beyond context window limits.</p>
+          <div class="paper-tags">
+            <span>Memory Compression</span>
+            <span>Long-Horizon Reasoning</span>
+          </div>
+        </div>
+        <div class="paper-card">
+          <div class="paper-status-badge">⏳ Under Review</div>
+          <div class="paper-metric">−40%</div>
+          <div class="paper-metric-label">context drift in conversational AI</div>
+          <h4>Self-Healing Memory Agents: Autonomous Error Recovery in LLM Conversational Systems</h4>
+          <p>Self-healing mechanism that detects and autonomously corrects memory corruption and context drift before responses degrade.</p>
+          <div class="paper-tags">
+            <span>Autonomous Recovery</span>
+            <span>Conversational AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY PATH -->
+  <section id="mypath">
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-icon">📍</div>
+        <h2>My Path</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-track"></div>
+
+        <div class="tl-item">
+          <div class="tl-dot active"></div>
+          <div class="tl-card">
+            <div class="tl-date">Mar 2024 – Present</div>
+            <div class="tl-company">Bank of America <span class="tl-loc">· New York, NY</span></div>
+            <div class="tl-role">Senior Software Engineer — Generative AI &amp; Agentic Systems</div>
+            <div class="tl-tags">
+              <span>GPT-4</span><span>Claude</span><span>LangChain</span><span>Multi-Agent</span><span>USPTO Patent</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-date">Oct 2022 – Jan 2024</div>
+            <div class="tl-company">Bank of America <span class="tl-loc">· New York, NY</span></div>
+            <div class="tl-role">Senior Software Engineer — LLM Integration &amp; Backend</div>
+            <div class="tl-tags">
+              <span>LLMs</span><span>Python</span><span>Java</span><span>Microservices</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-date">Jul 2020 – Aug 2022</div>
+            <div class="tl-company">Bank of America <span class="tl-loc">· New York, NY</span></div>
+            <div class="tl-role">Senior Software Engineer — Backend &amp; Infrastructure</div>
+            <div class="tl-tags">
+              <span>Spring Boot</span><span>Node.js</span><span>TypeScript</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-date">Nov 2018 – Jun 2020</div>
+            <div class="tl-company">Premier Inc. <span class="tl-loc">· Charlotte, NC</span></div>
+            <div class="tl-role">Senior Software Engineer — Healthcare Technology</div>
+            <div class="tl-tags">
+              <span>Java</span><span>Spring</span><span>PostgreSQL</span><span>HIPAA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item tl-edu">
+          <div class="tl-dot edu"></div>
+          <div class="tl-card">
+            <div class="tl-date">Graduated</div>
+            <div class="tl-company">Marist College <span class="tl-loc">· Poughkeepsie, NY</span></div>
+            <div class="tl-role">MS Information Systems (Computer Science)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Years Engineering</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Years GenAI</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-num">1</div>
+          <div class="stat-label">U.S. Patent</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <div class="stat-num">$30B+</div>
+          <div class="stat-label">Institution Scale</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="contact-title">Let's talk.</h2>
+      <p class="contact-sub">Looking for a <strong>Senior / Staff AI Engineer</strong> role where I can own the AI stack end-to-end — agentic infrastructure, LLM pipelines, and systems that self-heal.</p>
+      <div class="contact-buttons">
+        <a href="mailto:madhav.venigalla@gmail.com" class="btn-contact primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact
+        </a>
+        <a href="https://www.linkedin.com/in/cloudaiengineer/" target="_blank" rel="noopener" class="btn-contact secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Venkat Madhav Venigalla</span>
+      <span>New York, NY · Open to opportunities</span>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET — futuristic career-ops terminal -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-panel" id="chatPanel">
+      <!-- Terminal header -->
+      <div class="chat-panel-header">
+        <div class="chat-term-dots"><span></span><span></span><span></span></div>
+        <div class="chat-panel-title">career<span class="chat-ops">-ops</span> <span class="chat-ver">v2.0</span></div>
+        <div class="chat-status-pill"><span class="chat-online-dot"></span>online</div>
+        <button class="chat-close" id="chatClose">✕</button>
+      </div>
+      <!-- Category tabs -->
+      <div class="chat-tabs" id="chatTabs">
+        <button class="chat-tab active" data-ctab="career">💼 Career</button>
+        <button class="chat-tab" data-ctab="tech">⚡ Tech</button>
+        <button class="chat-tab" data-ctab="build">🚀 Build</button>
+      </div>
+      <!-- Messages -->
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-bubble bot">
+          <span class="chat-prompt-sym">&gt;_</span> Initialising career-ops engine… select a topic or ask anything below.
+        </div>
+      </div>
+      <!-- Q panels per tab -->
+      <div class="chat-q-panel active" id="ctab-career">
+        <button class="chat-cq" data-q="0">Are you open to work?</button>
+        <button class="chat-cq" data-q="1">What's your ideal role?</button>
+        <button class="chat-cq" data-q="2">Where are you based?</button>
+      </div>
+      <div class="chat-q-panel" id="ctab-tech">
+        <button class="chat-cq" data-q="3">What's your core stack?</button>
+        <button class="chat-cq" data-q="4">LangChain or custom agents?</button>
+        <button class="chat-cq" data-q="5">How do you handle LLMOps?</button>
+      </div>
+      <div class="chat-q-panel" id="ctab-build">
+        <button class="chat-cq" data-q="6">Explain your USPTO patent</button>
+        <button class="chat-cq" data-q="7">How does the AI pipeline work?</button>
+        <button class="chat-cq" data-q="8">Production AI at Bank of America?</button>
+      </div>
+      <!-- Custom input -->
+      <div class="chat-input-row">
+        <span class="chat-input-sym">&gt;</span>
+        <input class="chat-input" id="chatInput" placeholder="Type a question..." autocomplete="off" maxlength="200" />
+        <button class="chat-send" id="chatSend" aria-label="Send">↵</button>
+      </div>
+      <div class="chat-engine-label">career-ops engine · powered by Claude</div>
+    </div>
+    <button class="chat-fab" id="chatFab">
+      <span class="chat-fab-icon">⚡</span>
+      <span class="chat-fab-label">Ask me</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

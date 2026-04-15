@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "live": true,
+  "agents": [
+    { "id": "customer-service",   "name": "Aria — Customer Support",      "icon": "🎧" },
+    { "id": "appointment-booking","name": "Max — Appointment Scheduler",   "icon": "📅" }
+  ],
+  "vapi_configured": true
+}
