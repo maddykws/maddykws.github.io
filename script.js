@@ -591,3 +591,38 @@ async function pollVoiceBackend() {
 // Poll immediately and then every 8s
 pollVoiceBackend();
 setInterval(pollVoiceBackend, 8000);
+
+
+// ── Patent Demo Overlay ──────────────────────────────────────────────────────
+(function () {
+  const overlay  = document.getElementById('demoOverlay');
+  const iframe   = document.getElementById('demoIframe');
+  const loading  = document.getElementById('demoLoading');
+  const openBtn  = document.getElementById('openPatentDemo');
+  const closeBtn = document.getElementById('closePatentDemo');
+  if (!overlay || !openBtn || !closeBtn) return;
+
+  function open() {
+    // Lazy-load the iframe src
+    if (!iframe.src || iframe.src === window.location.href) {
+      iframe.src = iframe.dataset.src;
+    }
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // Hide spinner once iframe loads
+    iframe.onload = () => loading && loading.classList.add('hidden');
+  }
+
+  function close() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) close();
+  });
+})();

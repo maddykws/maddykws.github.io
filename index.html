@@ -380,6 +380,94 @@
         </div>
       </div>
 
+      <!-- PATENT DEMO LAUNCH -->
+      <div class="demo-launch-card">
+        <!-- Mini animated 3D node preview -->
+        <div class="demo-mini-scene" aria-hidden="true">
+          <svg class="demo-scene-svg" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
+            <!-- Edges -->
+            <line class="demo-edge" x1="160" y1="60" x2="60" y2="30"/>
+            <line class="demo-edge" x1="160" y1="60" x2="260" y2="30"/>
+            <line class="demo-edge" x1="160" y1="60" x2="60" y2="90"/>
+            <line class="demo-edge" x1="160" y1="60" x2="260" y2="90"/>
+            <line class="demo-edge" x1="160" y1="60" x2="160" y2="10"/>
+            <!-- Traveling particles -->
+            <circle class="demo-particle p1" r="3" fill="#818cf8"/>
+            <circle class="demo-particle p2" r="3" fill="#34d399"/>
+            <circle class="demo-particle p3" r="3" fill="#fbbf24"/>
+            <circle class="demo-particle p4" r="3" fill="#f472b6"/>
+            <circle class="demo-particle p5" r="3" fill="#22d3ee"/>
+            <!-- Orchestrator -->
+            <circle class="demo-node orchestrator-node" cx="160" cy="60" r="16"/>
+            <text class="demo-node-icon" x="160" y="65">⚡</text>
+            <!-- Agent nodes -->
+            <circle class="demo-node agent-node" cx="60" cy="30" r="10" style="--c:#818cf8"/>
+            <circle class="demo-node agent-node fault-node" cx="260" cy="30" r="10" style="--c:#ef4444"/>
+            <circle class="demo-node agent-node" cx="60" cy="90" r="10" style="--c:#fbbf24"/>
+            <circle class="demo-node agent-node" cx="260" cy="90" r="10" style="--c:#f472b6"/>
+            <circle class="demo-node agent-node" cx="160" cy="10" r="10" style="--c:#22d3ee"/>
+            <!-- Fault flash on red node -->
+            <circle class="demo-fault-ring" cx="260" cy="30" r="10"/>
+            <!-- Recovery node spawning -->
+            <circle class="demo-node recovery-node" cx="300" cy="55" r="8"/>
+          </svg>
+          <div class="demo-scene-labels">
+            <span class="dsl-live">● LIVE AI</span>
+            <span class="dsl-fault">⚡ Fault Detected</span>
+            <span class="dsl-heal">↻ Self-Healed</span>
+          </div>
+        </div>
+
+        <!-- Explanation -->
+        <div class="demo-launch-body">
+          <div class="demo-launch-eyebrow">Interactive Patent Demo</div>
+          <h3 class="demo-launch-title">Watch AI Systems Heal Themselves in Real Time</h3>
+          <p class="demo-launch-desc">
+            Trigger a fault. Watch the orchestrator detect it, spawn a recovery agent, and continue the pipeline —
+            all without human input. Powered by real Claude API calls, streamed live as it happens.
+          </p>
+          <div class="demo-launch-pills">
+            <span>Real Claude API</span>
+            <span>Three.js 3D</span>
+            <span>Live SSE Stream</span>
+            <span>3 free demos / day</span>
+          </div>
+          <button class="demo-launch-btn" id="openPatentDemo">
+            <span class="dlb-glow"></span>
+            <span class="dlb-icon">▶</span>
+            <span class="dlb-text">Experience the Patent Live</span>
+            <span class="dlb-arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Full-screen demo overlay -->
+      <div class="demo-overlay" id="demoOverlay" role="dialog" aria-modal="true" aria-label="Self-Healing Demo">
+        <div class="demo-overlay-header">
+          <div class="demo-overlay-title">
+            <span class="demo-overlay-badge">PATENT DEMO</span>
+            Self-Healing Multi-Agent Workflow
+          </div>
+          <div class="demo-overlay-controls">
+            <a class="demo-overlay-link" href="https://github.com/maddykws/self-healing-demo" target="_blank" rel="noopener">GitHub ↗</a>
+            <button class="demo-overlay-close" id="closePatentDemo" aria-label="Close demo">✕</button>
+          </div>
+        </div>
+        <iframe
+          id="demoIframe"
+          class="demo-overlay-iframe"
+          src=""
+          data-src="https://self-healing-demo.onrender.com"
+          title="Self-Healing Multi-Agent Workflow Demo"
+          allow="same-origin"
+          loading="lazy"
+        ></iframe>
+        <div class="demo-overlay-loading" id="demoLoading">
+          <div class="dol-spinner"></div>
+          <p>Waking up the demo server<br/><small>Free tier — first load takes ~30s</small></p>
+        </div>
+      </div>
+
       <!-- Papers -->
       <div class="papers-grid">
         <div class="paper-card">
