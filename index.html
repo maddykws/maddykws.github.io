@@ -520,20 +520,15 @@
         <div class="qtab-panel" id="qtab-demo" style="display:none">
           <div class="live-notice">
             <span class="live-badge-dot"></span>
-            <span><strong>Live App</strong> — Explore 56-quarter results, generate Claude investment memos, and see GPU speedup benchmarks. Add your Anthropic key for live AI narration.</span>
+            <span><strong>Live App</strong> — Explore 56-quarter results, generate Claude investment memos, and see GPU speedup benchmarks. Add your Anthropic key for live AI narration. &nbsp;<a href="https://quantum-portfolio-ising.streamlit.app/" target="_blank" rel="noopener" style="color:#76b900;font-weight:700;text-decoration:none">Open in new tab ↗</a></span>
           </div>
           <div id="quantum-demo-container" style="margin-top:12px">
-            <div class="demo-loading-msg" id="quantumLoadingMsg" style="text-align:center;padding:32px;color:#888;font-size:0.85rem">
-              <div style="font-size:1.5rem;margin-bottom:8px">⚛️</div>
-              Loading quantum portfolio demo...
-            </div>
             <iframe
               id="quantumDemoFrame"
               src="https://quantum-portfolio-ising.streamlit.app/?embed=true"
-              style="display:none;width:100%;height:680px;border:none;border-radius:8px;background:#0a0a0a"
+              style="width:100%;height:700px;border:none;border-radius:8px;background:#0a0a0a"
               loading="lazy"
               allow="clipboard-write"
-              onload="document.getElementById('quantumLoadingMsg').style.display='none';this.style.display='block'"
             ></iframe>
           </div>
         </div>
