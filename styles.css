@@ -1503,7 +1503,9 @@ footer .container {
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
+  pointer-events: none;
 }
+.chat-widget > * { pointer-events: auto; }
 
 /* FAB button */
 .chat-fab {
