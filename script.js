@@ -537,6 +537,19 @@ document.querySelectorAll('.ptab[data-voice-tab]').forEach(tab => {
   });
 });
 
+// Quantum portfolio tab switcher
+document.querySelectorAll('.ptab[data-qtab]').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const card = tab.closest('.project-featured');
+    card.querySelectorAll('.ptab[data-qtab]').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const which = tab.dataset.qtab;
+    card.querySelectorAll('.qtab-panel').forEach(p => p.style.display = 'none');
+    const panel = document.getElementById(`qtab-${which}`);
+    if (panel) panel.style.display = '';
+  });
+});
+
 function renderVoiceDemo() {
   const container = document.getElementById('voice-demo-container');
   if (!container) return;
